@@ -45,21 +45,17 @@ html, body {
 .menu-icon-container{
     width: fit-content;
     height: auto;
-}
-
-.menu-icon-container i{
-    font-size: 1.3rem;
     cursor: pointer;
 }
 
 .logo-container{
-    width: 100%;
+    width: fit-content;
     height: auto;
 
 }
 .logo-container img{
-    width: 100%;
-    height: 100%;
+    width: 4.5rem;
+    height: auto;
 
 }
 
@@ -83,8 +79,8 @@ html, body {
 }
 
 input{
-    padding: 0.6rem 0.8rem 0.6rem 1.5rem;
-    width: 32rem;
+    padding: 0.5rem 0.8rem 0.5rem 1rem;
+    width: 30rem;
     height: auto;
     border-radius: 2rem 0rem 0rem 2rem;
     border: 1px solid #d4d4d4;
@@ -110,6 +106,15 @@ input:focus{
     align-items: center;
 }
 
+.search-icon-container img{
+    width: 1.3rem;
+    height: auto;
+}
+
+.microphone-container img{
+    width: 1.3rem;
+    height: auto;
+}
 
 .microphone-container{
     width: fit-content;
@@ -187,7 +192,7 @@ input:focus{
 }
 
 .sidebar{
-    width: 16%;
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -271,6 +276,9 @@ input:focus{
     height: auto;
     font-size: 0.8rem;
     font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bottom-section{
@@ -281,7 +289,7 @@ input:focus{
 }
 
 .right-body-container{
-    width: 84%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -303,6 +311,9 @@ input:focus{
     justify-content: start;
     align-items: start;
     column-gap: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .filter-container p{
@@ -356,7 +367,7 @@ input:focus{
 
 .cover-image{
     width: 100%;
-    height: 220px;
+    height: 180px;
     padding: 1rem;
     background-color: #e2e2e2;
     background-image: url(./image/fame-and-fury.png);
@@ -371,7 +382,7 @@ input:focus{
 
 .cover-image-2{
     width: 100%;
-    height: 220px;
+    height: 180px;
     padding: 1rem;
     background-color: #e2e2e2;
     background-image: url(./image/hq720\ \(1\).avif);
@@ -386,7 +397,7 @@ input:focus{
 
 .cover-image-3{
     width: 100%;
-    height: 220px;
+    height: 180px;
     padding: 1rem;
     background-color: #e2e2e2;
     background-image: url(./image/hqdefault.avif);
@@ -485,4 +496,38 @@ input:focus{
 
 .sub-details p{
     font-size: 0.8rem ;
+}
+
+@media screen and (max-width: 1120px) {
+    
+    input{
+        padding: 0.5rem 0.8rem 0.5rem 1rem;
+        width: 24rem;
+        height: auto;
+        border-radius: 2rem 0rem 0rem 2rem;
+        border: 1px solid #d4d4d4;
+        outline: none;
+    }
+
+    .cards-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        padding: 1rem 1rem 0.5rem 1rem;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+
+    .youtube-card{
+        width: 49%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    
+    
 }
